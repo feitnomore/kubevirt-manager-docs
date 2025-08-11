@@ -1,0 +1,33 @@
+# MKDocs Setup
+site_name: docs.kubevirt-manager.io
+site_url: https://docs.kubevirt-manager.io/
+site_author: kubevirt-manager
+
+# Github Setup
+repo_url: https://github.com/kubevirt-manager/kubevirt-manager-docs
+repo_name: kubevirt-manager-docs
+edit_uri: edit/main/docs/
+
+#theme:
+#  name: readthedocs
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - search.highlight
+    - search.suggest
+
+nav:
+  - Home: 'index.md'
+  - Installation:
+    - 'Requirements': 'install/requirements.md'
+    - 'Quickstart': 'install/quickstart.md'
+    - 'Detailed': 'install/details.md'
+    - 'Ingress': 'install/ingress.md'
+  - Authentication:
+    - 'Basic': 'auth/basic.md'
+    - 'Oauth2': 'auth/oauth2.md'
+  - Features:
+    - 'Prometheus': 'features/prometheus.md'
+    - 'Cluster API': 'features/cluster-api.md'
